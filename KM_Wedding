@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>إعادة التوجيه للدعوة</title>
+  <script>
+    const name = new URLSearchParams(window.location.search).get("name");
+    if (name) {
+      const encoded = encodeURIComponent(name);
+      window.location.href = "https://script.google.com/macros/s/AKfycbxZ_cCsuPnBRntp9Fj-JK-X9ujQ5TiXF-6haGvk8w6d6qXrvSNTLmTmMQgtsUimk3lcLw/exec?name=" + encoded;
+    } else {
+      document.body.innerText = "لا يوجد اسم بالرابط!";
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
